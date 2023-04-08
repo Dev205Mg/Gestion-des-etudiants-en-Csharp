@@ -8,8 +8,47 @@ namespace Gestion_Des_Etudiants
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Afficher(string f, string n, string nom, float[] notes)
         {
+            Console.WriteLine("filiere : " + f);
+            Console.WriteLine("niveau : " + n);
+            Console.WriteLine("nom : " + nom);
+            foreach(var note in notes)
+            {
+                Console.WriteLine("Note : " + note);
+            }
+            
+        }
+        static void Main(string[] args)
+        {/*
+            Console.Write("Entrez votre filiere : ");
+            string filiere = Console.ReadLine();
+
+            Console.Write("Entrez votre niveau : ");
+            string niveau = Console.ReadLine();
+
+            Console.Write("Entrez votre nom : ");
+            string nom = Console.ReadLine();
+
+            Console.Write("Entrez vos notes :\n Note1 : ");
+            var notes = new float[3];
+            notes[0] = float.Parse(Console.ReadLine());
+            Console.Write(" Note2 : ");
+            notes[1] = float.Parse(Console.ReadLine());
+            Console.Write(" Note3 : ");
+            notes[2] = float.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            Afficher(filiere, niveau, nom, notes);
+            */
+            var julie = new GestL1("julie");
+            julie.note1 = 14.5f;
+            julie.note2 = 18.5f;
+            julie.GetNotes();
+            julie.GetMoyenne();
+            julie.GetMention();
+            julie.ImprimBulletin();
+            Console.ReadKey();
         }
     }
 }
