@@ -11,7 +11,7 @@ namespace Gestion_Des_Etudiants
         protected string nom;
         protected string filiere;
         protected string niveau;
-        protected List<float> notes;
+        protected Dictionary<string, float> notes = new Dictionary<string, float>();
         protected string mention;
         protected float moy;
 
@@ -32,7 +32,39 @@ namespace Gestion_Des_Etudiants
         }
 
         public abstract void GetNotes();
-        public abstract void GetMoyenne();
-        public abstract void GetMention();
+
+        public void GetMoyenne()
+        {
+            foreach (var note in notes)
+            {
+                moy += note.Value;
+            }
+
+            moy /= notes.Count;
+        }
+
+        public void GetMention()
+        {
+            if (moy < 10)
+            {
+                mention = "INSUFFISANTE";
+            }
+            else if (moy <= 14)
+            {
+                mention = "ASSEZ BIEN";
+            }
+            else if (moy <= 16)
+            {
+                mention = "BIEN";
+            }
+            else if (moy <= 18)
+            {
+                mention = "TRES BIEN";
+            }
+            else
+            {
+                mention = "EXELLENT";
+            }
+        }
     }
 }

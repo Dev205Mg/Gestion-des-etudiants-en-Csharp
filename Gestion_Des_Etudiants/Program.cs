@@ -48,6 +48,34 @@ namespace Gestion_Des_Etudiants
             julie.GetMoyenne();
             julie.GetMention();
             julie.ImprimBulletin();
+
+            var dolph = new InfoL1("dolph");
+            dolph.note1 = 18;
+            dolph.note2 = 19.75f;
+            dolph.GetNotes();
+            dolph.GetMoyenne();
+            dolph.GetMention();
+            dolph.ImprimBulletin();
+
+            var claire = new GestL2("claire");
+            claire.note1 = 10.5f;
+            claire.note2 = 11f;
+            claire.note3 = 10f;
+            claire.GetNotes();
+            claire.GetMoyenne();
+            claire.GetMention();
+            claire.ImprimBulletin();
+
+            var jimmy = new InfoL2("jimmy");
+            jimmy.note1 = 18.75f;
+            jimmy.note2 = 7.5f;
+            jimmy.note3 = 10;
+            jimmy.note4 = 15f;
+            jimmy.GetNotes();
+            jimmy.GetMoyenne();
+            jimmy.GetMention();
+            jimmy.ImprimBulletin();
+
             Console.ReadKey();
         }
     }

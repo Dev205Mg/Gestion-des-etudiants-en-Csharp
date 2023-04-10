@@ -17,37 +17,12 @@ namespace Gestion_Des_Etudiants
             this.niveau = "L1";
         }
 
-        public override void GetMention()
-        {
-            if (moy < 10)
-            {
-                mention = "INSUFFISANTE";
-            } else if (moy <= 14)
-            {
-                mention = "ASSEZ BIEN";
-            }else if (moy <= 16)
-            {
-                mention = "BIEN";
-            }else if (moy <= 18)
-            {
-                mention = "TRES BIEN";
-            }
-            else
-            {
-                mention = "EXELLENT";
-            }
-        }
-
         public override void GetNotes()
         {
             Console.WriteLine("Vous matieres sont : COMPTABILITE et MATHS FI");
-            notes.Add(note1);
-            notes.Add(note2);
+            notes.Add("Compta",note1);
+            notes.Add("MathsFi",note2);
         }
 
-        public override void GetMoyenne()
-        {
-            moy = ((notes[0] * 2) + (notes[1] * 2)) / notes.Count * 2;
-        }
     }
 }

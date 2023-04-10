@@ -8,25 +8,20 @@ namespace Gestion_Des_Etudiants
 {
     class InfoL1 : Informatique
     {
+        public float note1;
+        public float note2;
+
         public InfoL1(string nom) : base(nom, null)
         {
             this.nom = nom;
             this.niveau = "L1";
         }
 
-        public override void GetMention()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void GetMoyenne()
-        {
-            throw new NotImplementedException();
-        }
-
         public override void GetNotes()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Vous matieres sont : ALGORITHME et LANGAGE PASCAL");
+            notes.Add("Algo", note1);
+            notes.Add("Pascal", note2);
         }
     }
 }

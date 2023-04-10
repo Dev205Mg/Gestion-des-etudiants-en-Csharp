@@ -8,25 +8,24 @@ namespace Gestion_Des_Etudiants
 {
     class InfoL2 : Informatique
     {
+        public float note1;
+        public float note2;
+        public float note3;
+        public float note4;
+
         public InfoL2(string nom) : base(nom, null)
         {
             this.nom = nom;
             this.niveau = "L2";
         }
 
-        public override void GetMention()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void GetMoyenne()
-        {
-            throw new NotImplementedException();
-        }
-
         public override void GetNotes()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Vous matieres sont : HTML/CSS, PHP, C# et PYTHON");
+            notes.Add("Html", note1);
+            notes.Add("Php", note2);
+            notes.Add("C sharp", note3);
+            notes.Add("Python", note4);
         }
     }
 }
