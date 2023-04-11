@@ -18,17 +18,17 @@ namespace Gestion_Des_Etudiants
         public void ImprimBulletin()
         {
             Console.WriteLine("**************************************************");
-            AfficherNom();
+            AfficherInformation();
             Console.WriteLine("**************************************************");
         }
 
-        private void AfficherNom()
+        private void AfficherInformation()
         {
-            Console.WriteLine("FILIERE : " + filiere);
-            Console.WriteLine(" NIVEAU : " + niveau);
-            Console.WriteLine(" NOM : " + nom);
-            Console.WriteLine(" MOYENNE : " + moy);
-            Console.WriteLine(" MENTION : " + mention);
+            Console.WriteLine("FILIERE   : " + filiere);
+            Console.WriteLine("  NIVEAU  : " + niveau);
+            Console.WriteLine("  NOM     : " + nom);
+            Console.WriteLine("  MOYENNE : " + moy);
+            Console.WriteLine("  MENTION : " + mention);
         }
 
         public abstract void GetNotes();

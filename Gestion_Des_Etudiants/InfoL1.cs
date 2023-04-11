@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Outils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,6 @@ namespace Gestion_Des_Etudiants
 {
     class InfoL1 : Informatique
     {
-        public float note1;
-        public float note2;
-
         public InfoL1(string nom) : base(nom, null)
         {
             this.nom = nom;
@@ -20,8 +18,7 @@ namespace Gestion_Des_Etudiants
         public override void GetNotes()
         {
             Console.WriteLine("Vous matieres sont : ALGORITHME et LANGAGE PASCAL");
-            notes.Add("Algo", note1);
-            notes.Add("Pascal", note2);
+            Assets.GetNotes(2, notes);
         }
     }
 }
