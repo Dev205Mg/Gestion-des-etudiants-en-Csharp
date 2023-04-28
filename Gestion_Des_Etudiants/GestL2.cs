@@ -17,7 +17,7 @@ namespace Gestion_Des_Etudiants
 
         public override void GetNotes()
         {
-            Console.WriteLine("Vous matieres sont : COMPTABILITE 2, DROIT DES AFFAIRES et MATHS FI 2");
+            Console.WriteLine("Vous avez 03 matieres : COMPTABILITE 2, DROIT DES AFFAIRES et MATHS FI 2");
             Assets.GetNotes(3, notes);
         }
     }

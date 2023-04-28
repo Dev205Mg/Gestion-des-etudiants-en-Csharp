@@ -17,7 +17,7 @@ namespace Gestion_Des_Etudiants
 
         public override void GetNotes()
         {
-            Console.WriteLine("Vous matieres sont : HTML/CSS, PHP, C# et PYTHON");
+            Console.WriteLine("Vous avez 04 matieres : HTML/CSS, PHP, C# et PYTHON");
             Assets.GetNotes(4, notes);
         }
     }

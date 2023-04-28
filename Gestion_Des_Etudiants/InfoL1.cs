@@ -17,7 +17,7 @@ namespace Gestion_Des_Etudiants
 
         public override void GetNotes()
         {
-            Console.WriteLine("Vous matieres sont : ALGORITHME et LANGAGE PASCAL");
+            Console.WriteLine("Vous avez 02 matieres : ALGORITHME et LANGAGE PASCAL");
             Assets.GetNotes(2, notes);
         }
     }

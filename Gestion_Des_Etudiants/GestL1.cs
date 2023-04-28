@@ -17,7 +17,7 @@ namespace Gestion_Des_Etudiants
 
         public override void GetNotes()
         {
-            Console.WriteLine("Vous matieres sont : COMPTABILITE et MATHS FI");
+            Console.WriteLine("Vous avez 02 matieres : COMPTABILITE et MATHS FI");
             Assets.GetNotes(2, notes);
         }
 

@@ -77,9 +77,19 @@ namespace Outils
 
         public static string GetNom(string question)
         {
-            Console.Write(question);
-            string nom = Console.ReadLine();
-            return nom;
+            while (true)
+            {
+                string nom;
+                Console.Write(question);
+                string name = Console.ReadLine();
+                if(!string.IsNullOrWhiteSpace(name))
+                {
+                    nom = name;
+                    return nom;
+                }
+
+                Console.WriteLine("ERREUR ! Retrez un nom valable\n");
+            }
         }
 
         public static Etudiant ClasseChoisi(int f, int n, string nom)
